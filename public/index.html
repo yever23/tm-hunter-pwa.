@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/icon-192.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#115e59" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>TM HUNTER 2025</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="%PUBLIC_URL%/src/main.jsx"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('%PUBLIC_URL%/sw.js');
+      });
+    }
+  </script>
+</body>
+</html>
